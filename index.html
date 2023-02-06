@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<title>Google Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body><section id="sec">
+<h1 id = "title">freeCodeCamp Survey Form</h1>
+<p id = "description">Thank you for taking the time to help us improve the platform</p><div id ="fen">
+</section>
+<form id ="survey" method="post" action="asp.php">
+
+    <label class="t2" for="name1">Name</label><br>
+    <input id = "name1"  class="b2" type="text" placeholder="Enter your name" name = "name1" required><br>
+
+    <label class="t2" for="email">Email</label><br>
+    <input id = "email" class="b2" type="text" placeholder="Enter your email" name = "email" required><br>
+    
+    <label class="t2" for="age">Age(Optional)</label><br>
+    <input class="b2" id = "age" type="number" placeholder="Enter your age" name = "age"><br>
+    <label class="t2" for="jobRole">Which option best describes your current role?</label><br>
+    <select class="b2"  id="jobRole" name="dropdown">
+            <option class="b2"  value="" disabled selected hidden >Select current role</option>
+            <option class="b2" value = "Student">Student</option>
+            <option class="b2" value = "ftp">Full time job</option>
+            <option class="b2" value = "ftl">Full time learner</option>
+            <option class="b2" value = "ptts">Prefer not to say</option>
+            <option class="b2" value = "other">other</option>
+    </select><br>
+    <label class="t2" for="recommend">Would you recommend freeCodeCamp to a friend?</label><br>
+    <input type="radio" id = "recommend" checked name=" recommend" value="Yes">
+    <label class="t2" for="recommend">Definitely</label><br>
+    <input type="radio" id = "recommend" name=" recommend" value="Maybe">
+    <label class="t2" for="recommend">Maybe</label><br>
+    <input type="radio" id = "recommend" name=" recommend" value="NotS">
+    <label class="t2" for="recommend">Not Sure</label><br>
+    
+    <label class="t2" for="feature">What is your favorite feature of freeCodeCamp?</label><br>
+    <select class="b2" id = "feature" name="dropdown">
+        <option value="" disabled selected hidden>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="os">Open-Source</option>
+    </select><br>
+    <label class="t2" for="liked">What would you like to see improved? (Check all that apply)</label><br>
+
+    <input type="checkbox" id="c1" name="Front-end Projects" value="Front-end Projects"><label class="t2" for="c1">Front-end Projects</label><br>
+
+    <input type="checkbox" id="c2" name="Back-end Projects" value="Back-end Projectss"><label class="t2" for="c2">Back-end Projects</label><br>
+
+    <input type="checkbox" id="c3" name="Data Visualization" value="Data Visualization"><label class="t2" for="c3">Data Visualization</label><br>
+
+    <input type="checkbox" id="c4" name="Challenges" value="Challenges"><label class="t2" for="c4">Challenges</label><br>
+
+    <input type="checkbox" id="c5" name="Open Source Community" value="Open Source Community"><label class="t2" for="c5">Open Source Community</label><br>
+
+    <input type="checkbox" id="c6" name="Gitter help rooms" value="Gitterhelprooms"><label  class="t2" for="c6">Gitter help rooms</label><br>
+
+    <input class="t2" type="checkbox" id="c7" name="Videos" value="Gitterhelprooms"><label class="t2" for="c7">Videos</label><br>
+
+    <input class="t2" type="checkbox" id="c8" name="City Meetups" value="CityMeetups"><label class="t2" for="c8">City Meetups</label><br>
+
+    <input class="t2" type="checkbox" id="c9" name="Wiki" value="Wiki"><label class="t2" for="c9">Wiki</label><br>
+
+    <input class="t2" type="checkbox" id="c10" name="Forum" value="Forum"><label class="t2"for="c10">Forum</label><br>
+
+    <input class="t2" type="checkbox" id="c11" name="Additional Courses" value="Additional Courses"><label class="t2" for="c11">Additional Courses</label><br>
+    <label class="t2" for="suggestions">Any comments or suggestions?</label><br>
+    <textarea class="b2" id="suggestions" name="sugg" rows="10" cols="40">Enter comments here
+    </textarea><br>
+    <input id="button" class="b2" type="submit" value="Submit">
+</div>
+</form>
+</body>
+</html>
